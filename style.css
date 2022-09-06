@@ -1,0 +1,340 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  background-color: whitesmoke;
+}
+
+.container {
+  width: 48rem;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+header {
+  background-image: url("./images/desktop/image-hero.jpg");
+  background-color: black;
+  background-repeat: none;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  padding: 2rem 4rem 0 4rem;
+}
+header p {
+  color: white;
+  width: 18rem;
+  padding: 1rem;
+  border: 1px solid;
+  display: inline-block;
+  font-weight: lightest;
+  font-size: 28px;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  margin: 4rem 0;
+}
+
+.top-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.top-banner .logo {
+  height: 1rem;
+}
+.top-banner nav {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.top-banner nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 8px;
+  padding: 0.25rem;
+  border-radius: 2px;
+}
+.top-banner nav a:hover {
+  border-bottom: 1px solid;
+}
+
+.mobile-menu-button,
+.mobile-menu,
+.main-body-head-button-two {
+  display: none;
+}
+
+main {
+  width: 100%;
+  padding: 4rem 4rem 5rem 4rem;
+}
+
+.main-head {
+  position: relative;
+  margin-bottom: 5rem;
+  width: 100%;
+  height: 16rem;
+}
+.main-head .interactive {
+  width: 60%;
+  height: 100%;
+  display: block;
+}
+.main-head article {
+  background-color: white;
+  padding: 3rem 3rem 0 3em;
+  position: absolute;
+  width: 50%;
+  display: inline-block;
+  bottom: 0;
+  right: 0;
+}
+.main-head article h2 {
+  font-weight: lighter;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+}
+.main-head article p {
+  font-size: 10px;
+  line-height: 0.75rem;
+}
+
+.main-body .main-body-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.main-body .main-body-head h2 {
+  font-weight: lighter;
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
+}
+
+button {
+  text-transform: uppercase;
+  font-size: 12px;
+  padding: 0.25rem 1rem;
+  background-color: white;
+  border: 0.5px solid;
+  word-spacing: 0.25rem;
+}
+button:hover {
+  color: white;
+  background-color: black;
+}
+
+.main-body-grid {
+  display: grid;
+  width: 100%;
+  margin-top: 3rem;
+  grid-template-columns: repeat(4, minmax(5rem, auto));
+  color: white;
+  grid-auto-rows: 15rem;
+  gap: 1rem;
+}
+.main-body-grid div {
+  background-size: cover;
+  padding: 1rem;
+  display: flex;
+  align-items: flex-end;
+  word-break: break-all;
+}
+.main-body-grid div p {
+  text-transform: uppercase;
+  font-size: 22px;
+}
+.main-body-grid .deep-earth {
+  background-image: url("./images/desktop/image-deep-earth.jpg");
+}
+.main-body-grid .night-arcade {
+  background-image: url("./images/desktop/image-night-arcade.jpg");
+}
+.main-body-grid .soccer-team {
+  background-image: url("./images/desktop/image-soccer-team.jpg");
+}
+.main-body-grid .the-grid {
+  background-image: url("./images/desktop/image-grid.jpg");
+}
+.main-body-grid .above-vr {
+  background-image: url("./images/desktop/image-from-above.jpg");
+}
+.main-body-grid .pocket-borealis {
+  background-image: url("./images/desktop/image-pocket-borealis.jpg");
+}
+.main-body-grid .the-curosity {
+  background-image: url("./images/desktop/image-curiosity.jpg");
+}
+.main-body-grid .fisheye {
+  background-image: url("./images/desktop/image-fisheye.jpg");
+}
+
+footer {
+  background-color: black;
+  padding: 1rem 4rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer .footer-one .logo {
+  height: 1rem;
+}
+footer .footer-one nav {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+footer .footer-one nav a {
+  color: white;
+  text-decoration: none;
+}
+footer .footer-two {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+footer .footer-two .socials {
+  align-self: flex-end;
+  display: flex;
+  gap: 0.5rem;
+}
+footer .footer-two .socials a img {
+  height: 1rem;
+}
+footer .footer-two p {
+  color: rgb(169, 167, 167);
+  font-size: 12px;
+}
+
+@media screen and (max-width: 700px) {
+  .main-head article {
+    padding: 2rem 2rem 0 2rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .container {
+    width: 100vw;
+  }
+  header {
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+  }
+  header .mobile-menu-button {
+    display: block;
+  }
+  .top-banner {
+    justify-content: space-between;
+    width: 100%;
+    align-items: initial;
+  }
+  .top-banner .top-nav {
+    flex-direction: column;
+    display: none;
+  }
+  .mobile-menu {
+    background-color: black;
+    width: 100%;
+    padding: 2rem;
+    margin-bottom: 8rem;
+    height: 100vh;
+    display: none;
+    position: fixed;
+    z-index: 2;
+  }
+  .mobile-menu .logos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .mobile-menu .top-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 5rem;
+    gap: 1rem;
+  }
+  .mobile-menu .top-nav a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 24px;
+  }
+  .mobile-menu .logo {
+    height: 1.5rem;
+  }
+  main {
+    padding: 4rem 1rem 5rem 1rem;
+    width: 100%;
+  }
+  main .main-body .main-body-head {
+    justify-content: center;
+  }
+  .main-head {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .main-head .interactive {
+    width: 100%;
+    background-color: tan;
+  }
+  .main-head article {
+    position: static;
+    width: 100%;
+    text-align: center;
+  }
+  .main-head article h2 {
+    font-size: 28px;
+  }
+  .main-head article p {
+    font-size: 15px;
+    line-height: normal;
+    color: rgb(76, 76, 76);
+  }
+  .main-body-head-button-one {
+    display: none;
+  }
+  .main-body-head-button-two {
+    display: block;
+    margin: 2rem auto;
+    padding: 0.85rem 4rem;
+    font-size: 17px;
+  }
+  .main-body-grid {
+    grid-template-columns: 100%;
+    grid-auto-rows: 8em;
+  }
+  footer {
+    padding: 4rem;
+    flex-direction: column;
+    align-items: center;
+  }
+  footer .footer-one .logo {
+    height: 1.5rem;
+  }
+  footer .footer-one nav {
+    flex-direction: column;
+    margin: 2rem 0;
+  }
+  footer .footer-two {
+    gap: 0.5rem;
+  }
+  footer .footer-two .socials {
+    align-self: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+  }
+  footer .footer-two .socials a img {
+    height: 1.35rem;
+  }
+}/*# sourceMappingURL=style.css.map */
